@@ -141,7 +141,7 @@ The individual images were published in Flickr by their respective authors under
 * [https://creativecommons.org/publicdomain/mark/1.0/](https://creativecommons.org/publicdomain/mark/1.0/)
 * [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
 
-The datasets (including JSON metadata and documentation) and pre-trained models are made available under [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0). If you use the data or models, please give appropriate credit by citing our paper.
+The datasets (including JSON metadata and documentation) and pre-trained models are made available under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). If you use the data or models, please give appropriate credit by citing our paper.
 
 ## Privacy
 
