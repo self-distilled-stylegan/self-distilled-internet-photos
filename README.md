@@ -73,13 +73,13 @@
 
 > **Self-Distilled StyleGAN: Towards Generation from Internet Photos**<br>
 > Ron Mokady, Michal Yarom, Omer Tov, Oran Lang, Daniel Cohen-Or, Tali Dekel, Michal Irani, Inbar Mosseri
-<!-- > TODO: url of arxiv -->
+https://arxiv.org/abs/2202.12211
 
 ## Overview
 
-[StyleGAN’s](https://github.com/NVlabs/stylegan2-ada-pytorch) fascinating generative and editing abilities are limited to structurally aligned and well-curated datasets. It does not work well on raw datasets downloaded from the Internet. The SDIP domains presented here, which are StyleGAN-friendly, were automatically curated by our [method](TODO) from raw images collected from the Internet. The raw uncurated images in *Self-Distilled Flicker (SD-Flickr)* were first crawled from [Flickr](https://www.flickr.com/) using a simple keyword (e.g. 'dog' or 'elephant').
+[StyleGAN’s](https://github.com/NVlabs/stylegan2-ada-pytorch) fascinating generative and editing abilities are limited to structurally aligned and well-curated datasets. It does not work well on raw datasets downloaded from the Internet. The SDIP domains presented here, which are StyleGAN-friendly, were automatically curated by our [method](https://arxiv.org/abs/2202.12211) from raw images collected from the Internet. The raw uncurated images in *Self-Distilled Flicker (SD-Flickr)* were first crawled from [Flickr](https://www.flickr.com/) using a simple keyword (e.g. 'dog' or 'elephant').
 
-The dataset in this page exhibits 4 domains: SD-Dogs (126K images), SD-Elephants (39K images), SD-Bicycles (96K images), and SD-Horses (162K images). Our curation process consists of a simple pre-processing step (off-the-shelf object detector to crop the main object and then rescale), followed by a sophisticated StyleGAN-friendly filtering step (which removes outlier images while maintaining dataset diversity). This results in a more coherent and clean dataset, which is suitable for training a StyleGAN2 generator (see more details in our [paper](TODO)).
+The dataset in this page exhibits 4 domains: SD-Dogs (126K images), SD-Elephants (39K images), SD-Bicycles (96K images), and SD-Horses (162K images). Our curation process consists of a simple pre-processing step (off-the-shelf object detector to crop the main object and then rescale), followed by a sophisticated StyleGAN-friendly filtering step (which removes outlier images while maintaining dataset diversity). This results in a more coherent and clean dataset, which is suitable for training a StyleGAN2 generator (see more details in our [paper](https://arxiv.org/abs/2202.12211)).
 
 The data itself is saved in a json format: for SD-Flickr we provide urls of the original images and bounding boxes used for cropping; for SD-LSUN we provide image identifiers with the bounding boxes. In addition to the SDIP dataset, we also provide weights of pre-trained StyleGAN2 models trained using each image domain provided here. 
 
@@ -123,11 +123,13 @@ Coming up soon!
 ## Citation
 If you plan to use this dataset, or the published code, please cite it as:
 ```
-@article{sdstylegan,
-  title={Self-Distilled StyleGAN: Towards Generation from Internet Photos},
-  author={Mokady, Ron and Yarom, Michal and Tov, Omer and Lang, Oran and Cohen-Or, Daniel and Dekel, Tali and Irani, Michal and Mosseri, Inbar},
-  journal={},
-  year={2022}
+@misc{mokady2022selfdistilled,
+      title={Self-Distilled StyleGAN: Towards Generation from Internet Photos}, 
+      author={Ron Mokady and Michal Yarom and Omer Tov and Oran Lang and Daniel Cohen-Or and Tali Dekel and Michal Irani and Inbar Mosseri},
+      year={2022},
+      eprint={2202.12211},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
