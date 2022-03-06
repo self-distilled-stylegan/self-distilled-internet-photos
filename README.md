@@ -83,9 +83,30 @@ The dataset in this page exhibits 4 domains: SD-Dogs (126K images), SD-Elephants
 
 The data itself is saved in a json format: for SD-Flickr we provide urls of the original images and bounding boxes used for cropping; for SD-LSUN we provide image identifiers with the bounding boxes. In addition to the SDIP dataset, we also provide weights of pre-trained StyleGAN2 models trained using each image domain provided here. 
 
-### Download
+### How to Download
 
-Script is coming up soon.
+We provide a script ([download.py](download.py)) for downloading and cropping the SDIP dataset images. 
+
+<ins>For SD-Flickr Domains (SD-Dogs, SD-Elephants)</ins>:
+
+Run the [download.py](download.py) script, e.g.:
+```
+python download.py --dataset dog
+```
+
+<ins>For SD-LSUN Domains (SD-Bicycles, SD-Horses)</ins>:
+
+1. Download the data from http://dl.yf.io/lsun/objects/. Then, unzip it and extract the images as presented in https://github.com/fyu/lsun. For example:
+```
+python3 lsun/data.py export bicycle/ --out_dir ./bicycles/
+```
+
+2. Process the images using the [download.py](download.py) script, e.g.:
+```
+python download.py --lsun_data ../lsun/bicycles/ --dataset bicycle
+```
+
+
 
 
 ## Self-Distilled Flickr (SD-Flickr)
@@ -144,6 +165,8 @@ The individual images were published in Flickr by their respective authors under
 * [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/)
 
 The datasets (including JSON metadata and documentation) and pre-trained models are made available under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). If you use the data or models, please give appropriate credit by citing our paper.
+
+The download script is made available under [apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Privacy
 
