@@ -83,6 +83,10 @@ The dataset in this page exhibits 4 domains: SD-Dogs (126K images), SD-Elephants
 
 The data itself is saved in a json format: for SD-Flickr we provide urls of the original images and bounding boxes used for cropping; for SD-LSUN we provide image identifiers with the bounding boxes. In addition to the SDIP dataset, we also provide weights of pre-trained StyleGAN2 models trained using each image domain presented in the paper. 
 
+## Web Demo
+
+Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the Web Demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/hysts/Self-Distilled-StyleGAN)
+
 ### How to Download
 
 We provide a script ([download.py](download.py)) for downloading and cropping the SDIP dataset images. 
